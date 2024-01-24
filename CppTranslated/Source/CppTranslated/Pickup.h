@@ -9,7 +9,7 @@
 class ARunCharacter;
 
 UCLASS()
-class OUTBREAK_API APickup : public AActor
+class CPPTRANSLATED_API APickup : public AActor
 {
 	GENERATED_BODY()
 	

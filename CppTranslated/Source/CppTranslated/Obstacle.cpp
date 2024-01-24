@@ -3,7 +3,7 @@
 
 #include "Obstacle.h"
 
-#include "Outbreak/RunCharacter.h"
+#include "CppTranslated/RunCharacter.h"
 
 #include "Kismet/GameplayStatics.h"
 

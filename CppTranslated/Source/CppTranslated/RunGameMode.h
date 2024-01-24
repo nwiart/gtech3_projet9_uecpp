@@ -13,7 +13,7 @@ class ATile;
  * 
  */
 UCLASS()
-class OUTBREAK_API ARunGameMode : public AGameModeBase
+class CPPTRANSLATED_API ARunGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
 	

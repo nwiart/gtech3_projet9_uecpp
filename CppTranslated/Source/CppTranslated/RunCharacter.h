@@ -14,7 +14,7 @@ class USoundBase;
 
 
 UCLASS()
-class OUTBREAK_API ARunCharacter : public ACharacter
+class CPPTRANSLATED_API ARunCharacter : public ACharacter
 {
 	GENERATED_BODY()
 

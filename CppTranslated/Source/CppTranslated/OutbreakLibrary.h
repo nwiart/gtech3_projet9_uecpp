@@ -10,7 +10,7 @@
  * 
  */
 UCLASS()
-class OUTBREAK_API UOutbreakLibrary : public UBlueprintFunctionLibrary
+class CPPTRANSLATED_API UOutbreakLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 	

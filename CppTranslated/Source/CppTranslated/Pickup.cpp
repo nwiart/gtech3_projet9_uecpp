@@ -3,7 +3,7 @@
 
 #include "Pickup.h"
 
-#include "Outbreak/RunCharacter.h"
+#include "CppTranslated/RunCharacter.h"
 
 #include "GameFramework/RotatingMovementComponent.h"
 

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class OutbreakTarget : TargetRules
+public class CppTranslatedTarget : TargetRules
 {
-	public OutbreakTarget(TargetInfo Target) : base(Target)
+	public CppTranslatedTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
 
-		ExtraModuleNames.AddRange( new string[] { "Outbreak" } );
+		ExtraModuleNames.AddRange( new string[] { "CppTranslated" } );
 	}
 }

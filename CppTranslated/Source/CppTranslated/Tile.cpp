@@ -8,7 +8,7 @@
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
 
-#include "Outbreak/OutbreakLibrary.h"
+#include "CppTranslated/OutbreakLibrary.h"
 
 
 ATile::ATile()

@@ -4,21 +4,24 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+
+#include "CppTranslated/Obstacle.h"
+#include "CppTranslated/Pickup.h"
+
 #include "Tile.generated.h"
+
 
 class UArrowComponent;
 class UBoxComponent;
 
 
-class AObstacle;
-class APickup;
 class ATile;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FTileExitSignature, ATile*, Tile);
 
 
 UCLASS()
-class OUTBREAK_API ATile : public AActor
+class CPPTRANSLATED_API ATile : public AActor
 {
 	GENERATED_BODY()
 	

@@ -10,7 +10,7 @@ class ARunCharacter;
 
 
 UCLASS()
-class OUTBREAK_API ARunCharacterController : public APlayerController
+class CPPTRANSLATED_API ARunCharacterController : public APlayerController
 {
 	GENERATED_BODY()
 	

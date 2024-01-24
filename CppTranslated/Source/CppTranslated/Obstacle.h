@@ -10,7 +10,7 @@ class ARunCharacter;
 
 
 UCLASS()
-class OUTBREAK_API AObstacle : public AActor
+class CPPTRANSLATED_API AObstacle : public AActor
 {
 	GENERATED_BODY()
 	

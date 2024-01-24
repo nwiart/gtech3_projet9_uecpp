@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class Outbreak : ModuleRules
+public class CppTranslated : ModuleRules
 {
-	public Outbreak(ReadOnlyTargetRules Target) : base(Target)
+	public CppTranslated(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
