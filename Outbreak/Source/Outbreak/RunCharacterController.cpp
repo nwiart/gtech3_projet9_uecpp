@@ -11,7 +11,8 @@
 ARunCharacterController::ARunCharacterController()
 	: RunCharacter(0)
 {
-
+	EnableInput(this);
+	AutoReceiveInput = EAutoReceiveInput::Player0;
 }
 
 void ARunCharacterController::BeginPlay()
@@ -23,6 +24,8 @@ void ARunCharacterController::BeginPlay()
 
 void ARunCharacterController::SetupInputComponent()
 {
+	Super::SetupInputComponent();
+
 	InputComponent->BindAction("StrafeLeft", EInputEvent::IE_Pressed, this, &ARunCharacterController::StrafeLeft);
 	InputComponent->BindAction("StrafeRight", EInputEvent::IE_Pressed, this, &ARunCharacterController::StrafeRight);
 }

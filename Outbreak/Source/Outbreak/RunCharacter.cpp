@@ -11,6 +11,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetSystemLibrary.h"
 
+#include "OutbreakLibrary.h"
+
 
 // Sets default values
 ARunCharacter::ARunCharacter()
@@ -28,6 +30,8 @@ ARunCharacter::ARunCharacter()
 
 	SpringArm->SetupAttachment(this->GetRootComponent());
 	Camera->SetupAttachment(SpringArm);
+
+	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
 
 // Called when the game starts or when spawned
@@ -49,7 +53,7 @@ void ARunCharacter::Tick(float DeltaTime)
 
 	// Slide sideways when switching corridors.
 	FVector location = GetActorLocation();
-	float desiredCorridorY = DesiredCorridor * 200.0F - 400.0F;
+	float desiredCorridorY = UOutbreakLibrary::GetCorridorY(DesiredCorridor);
 	if (FMathf::Abs(desiredCorridorY - location.Y) > 5.0F)
 	{
 		float offset = FMathf::Sign(desiredCorridorY - location.Y) * StrafeSpeed * DeltaTime;

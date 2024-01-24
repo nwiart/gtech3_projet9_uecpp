@@ -42,7 +42,7 @@ void AObstacle::OnMeshHit(UPrimitiveComponent* HitComponent, AActor* OtherActor,
 	if (OtherActor != (AActor*) UGameplayStatics::GetPlayerCharacter(this, 0)) return;
 
 	ARunCharacter* character = Cast<ARunCharacter>(OtherActor);
-	//if (!character) return;
+	if (!character) return;
 
 	OnHit(character);
 }
